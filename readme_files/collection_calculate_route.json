@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "b38c3eb9-773a-4069-a478-d0d00e8dbe1e",
+		"name": "Calculate Route Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List all tracks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[200] Best path",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[404] Best path - Origin not found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[404] Best path - Track is not accessible",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[201] Save new track",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Eh29TGhC21OSMUNkGgBwDUFXbJjm"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"origin\": \"ALA\",\n    \"destination\": \"TES\",\n    \"cost\": 20\n}"
+				},
+				"url": {
+					"raw": "127.0.0.10:5000/v1/track",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"10"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"track"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[400] Save new track - Invalid body",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer Eh29TGhC21OSMUNkGgBwDUFXbJjm"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"origin\": \"ALA\",\n    \"destination\": \"TES\",\n    \"cost\": 20\n}"
+				},
+				"url": {
+					"raw": "127.0.0.10:5000/v1/track",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"10"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"track"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
