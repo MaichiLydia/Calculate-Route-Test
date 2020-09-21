@@ -57,10 +57,6 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json"
-					},
-					{
-						"key": "Authorization",
-						"value": "Bearer Eh29TGhC21OSMUNkGgBwDUFXbJjm"
 					}
 				],
 				"body": {
@@ -92,10 +88,6 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json"
-					},
-					{
-						"key": "Authorization",
-						"value": "Bearer Eh29TGhC21OSMUNkGgBwDUFXbJjm"
 					}
 				],
 				"body": {
